@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="jsslogo">
+        <img src="./images/logo.jpeg" alt="jss logo">
+        <div class="heading">
+            <h2>HEAL AI</h2>
+        </div>
+    </div>
+    <div class="signupform">
+        <form class="form" id="signupForm">
+            <h2>SIGN UP</h2>
+            <hr>
+            <p>Name: <input type="text" name="name" id="name"></p>
+            <p>Email: <input type="email" name="email" id="email"></p>
+            <p>Age: <input type="number" name="age" id="age"></p>
+            <p>Password: <input type="password" name="password" id="password"></p>
+            <p>Confirm Password: <input type="password" name="confirmPassword" id="confirmPassword"></p>
+            <p>Phone No: <input type="text" name="phoneNumber" id="phoneNumber" maxlength="10"></p>
+            <div class="buttons p-3">
+                <button type="submit" class="btn btn-primary">SIGN UP</button>
+            </div>
+        </form>
+    </div>
+    <script src="signupscript.js"></script>
+    <!--<script>
+        document.getElementById('signupForm').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                age: document.getElementById('age').value,
+                password: document.getElementById('password').value,
+                confirmPassword: document.getElementById('confirmPassword').value,
+                phoneNumber: document.getElementById('phoneNumber').value,
+            };
+
+            try {
+                const response = await fetch('http://localhost:8000/api/auth/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                const result = await response.json();
+                if (response.ok) {
+                    // Handle successful registration (e.g., display a message or redirect)
+                    
+                   // alert('Registration successful!');
+                   window.location.href = 'login.html';
+                } else {
+                    // Handle errors (e.g., display an error message)
+                    alert(`Error: ${result.message}`);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again later.');
+            }
+        });
+    </script>-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

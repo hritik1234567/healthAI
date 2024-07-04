@@ -1,0 +1,158 @@
+/* MacBook Pro 14" - 1 */
+body {
+    position: relative;
+   
+    height: 2840px;
+    background-color: #1D4939 !important;
+}
+
+.navbar {
+    background-color: transparent !important;
+    color: white !important ;
+    
+}
+
+.navbar-brand {
+    color: rgb(183, 183, 204) !important ;/* Change the navbar brand color */
+    
+
+}
+.nav-link{
+    color: white !important;
+    color:#94c4b2;
+}
+.navbar-button{
+    display:flex;
+    flex-direction: row;
+   margin-left: auto;
+   float: right;
+   
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left-column {
+    width: 50%; /* Adjust as needed */
+    flex: 1; /* Grow to take available space */
+   
+    justify-content: center;
+   
+    margin-top: 200px;
+    
+}
+.right-column {
+    width: 50%; /* Adjust as needed */
+    text-align: center;
+    position: relative;
+}
+.person-image {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.person2 {
+    z-index: 1; /* Ensure model image appears above the person image */
+}
+/* Add your custom CSS styles here */
+/* Chatbot container styles */
+
+
+/* Second Page  */
+
+/* Style for the new section */
+.features-section {
+    background-color: #26603a; /* Background color */
+    padding: 50px 0;
+    margin-top:307px ;
+     /* Padding for top and bottom */
+}
+.features-section .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.features-section h2 {
+    color: white; /* Heading color */
+}
+
+.features-section p {
+    color: #e7e1e1; /* Text color */
+    margin-bottom: 30px; /* Bottom margin for paragraph */
+}
+.features-section .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.doctors-section{
+    background-color: #184b2a; /* Background color */
+ margin-top:-20px ;
+
+}
+.doctors-section .container{
+    display: flex;
+    flex-direction: column;
+}
+.doctors-section h2 {
+    color: white; /* Heading color */
+    text-align: center;
+}
+
+.doctors-section p {
+    color: #e7e1e1; /* Text color */
+    margin-bottom: 30px; /* Bottom margin for paragraph */
+    text-align: center;
+}
+.doctors-section .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* Footer styles */
+/* Footer styles */
+.footer {
+    background-color: #26603a;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    color:white ;
+}
+
+.footer .col-md-3 {
+    flex: 1;
+    max-width: 25%;
+    padding: 0 15px;
+}
+
+.footer h5 {
+    
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:white ;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color:white ;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #007bff;
+}
