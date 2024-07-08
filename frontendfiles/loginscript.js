@@ -3,7 +3,7 @@
 document.getElementById("signuppage").addEventListener("click", function() {
     // Perform the redirection when the button is clicked
     // Replace 'target-page.html' with the actual URL of the page you want to redirect to
-    targetURL = "signup.html";
+    targetURL = "./signup.html";
     window.open(targetURL, "_blank");
 });
 
@@ -31,7 +31,7 @@ function saveFormData() {
         // Handle response
         if (response.ok) {
             // Redirect to login page
-            window.location.href = '/login.html';
+            window.location.href = './frontendfiles/login.html';
         } else {
             console.error('Failed to save form data');
         }
@@ -63,7 +63,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
             
             localStorage.setItem('token', result.token);
         localStorage.setItem('user', JSON.stringify(result.patient));
-            window.location.href = 'index.html'; // Ensure index.html is correctly referenced
+            window.location.href = '/'; // Ensure index.html is correctly referenced
         } else {
             // Handle errors (e.g., display an error message)
             alert(`Error: ${result.message}`);

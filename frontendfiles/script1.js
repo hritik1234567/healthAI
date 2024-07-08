@@ -247,7 +247,7 @@ async function logout() {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     localStorage.removeItem('sessionData');
-    window.location.href = 'login.html';
+    window.location.href = './frontendfiles/login.html';
 }
 
 window.onload = function() {
