@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Make POST request to fetch appointments
-        const response = await fetch('http://localhost:8000/api/appointment/myappointment', {
+        const response = await fetch('https://healbackend-1.onrender.com/api/appointment/myappointment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Fetch doctor data from backend with optional search query
 async function fetchDoctorData(searchQuery = '') {
     try {
-        const response = await fetch(`http://localhost:8000/api/doctors?search=${searchQuery}`);
+        const response = await fetch(`https://healbackend-1.onrender.com/api/doctors?search=${searchQuery}`);
         if (!response.ok) {
             throw new Error('Failed to fetch data');
         }
@@ -110,7 +110,7 @@ async function postAppointment(appointmentData) {
 
             try {
                 confirmAppointmentButton.disabled = true;
-                const response = await fetch('http://localhost:8000/api/appointment/booking', {
+                const response = await fetch('https://healbackend-1.onrender.com/api/appointment/booking', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -186,7 +186,7 @@ function searchDoctors() {
 // Fetch doctor details by ID from backend
 async function fetchDoctorDetails(doctor_id) {
     try {
-        const response = await fetch(`http://localhost:8000/api/doctors/${doctor_id}`);
+        const response = await fetch(`https://healbackend-1.onrender.com/api/doctors/${doctor_id}`);
         if (!response.ok) {
             throw new Error('Failed to fetch data');
         }
