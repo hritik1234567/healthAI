@@ -24,7 +24,7 @@ document.getElementById('signupForm').addEventListener('submit', async function(
             // Handle successful registration (e.g., display a message or redirect)
             
            // alert('Registration successful!');
-           window.location.href = './frontendfiles/login.html';
+           window.location.href = './login.html';
         } else {
             // Handle errors (e.g., display an error message)
             alert(`Error: ${result.message}`);
