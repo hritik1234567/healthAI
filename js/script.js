@@ -164,7 +164,7 @@ async function createDoctorCards(searchQuery = '') {
     doctorData.slice(0, 4).forEach((doctor, index) => {
         const card = `
             <div class="card" style="width: 18rem;">
-                <img src="./images/doctor${index + 1}.png" class="card-img-top" alt="...">
+                <img src="../images/doctor${index + 1}.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${doctor.Name}</h5>
                     <h5 class="card-text">${doctor.Speciality}</h5>
@@ -237,8 +237,8 @@ async function checkSession() {
         `;
     } else {
         authButtons.innerHTML = `
-            <button type="button" class="btn btn-warning me-2" onclick="window.location.href='login.html'">Login</button>
-            <button type="button" class="btn btn-warning" onclick="window.location.href='signup.html'">Sign up</button>
+            <button type="button" class="btn btn-warning me-2" onclick="window.location.href='../html/login.html'">Login</button>
+            <button type="button" class="btn btn-warning" onclick="window.location.href='../html/signup.html'">Sign up</button>
         `;
     }
 }
@@ -247,7 +247,7 @@ async function logout() {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     localStorage.removeItem('sessionData');
-    window.location.href = './frontendfiles/login.html';
+    window.location.href = '../html/login.html';
 }
 
 window.onload = function() {

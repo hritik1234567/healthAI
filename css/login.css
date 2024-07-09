@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/loginbg.png);
+    background-image: url(../images/loginbg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
