@@ -237,8 +237,8 @@ async function checkSession() {
         `;
     } else {
         authButtons.innerHTML = `
-            <button type="button" class="btn btn-warning me-2" onclick="window.location.href='../html/login.html'">Login</button>
-            <button type="button" class="btn btn-warning" onclick="window.location.href='../html/signup.html'">Sign up</button>
+            <button type="button" class="btn btn-warning me-2" onclick="window.location.href='/healthAI../html/login.html'">Login</button>
+            <button type="button" class="btn btn-warning" onclick="window.location.href='/healthAI../html/signup.html'">Sign up</button>
         `;
     }
 }
@@ -247,7 +247,7 @@ async function logout() {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     localStorage.removeItem('sessionData');
-    window.location.href = '../html/login.html';
+    window.location.href = '/healthAI../html/login.html';
 }
 
 window.onload = function() {
