@@ -63,7 +63,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
             
             localStorage.setItem('token', result.token);
         localStorage.setItem('user', JSON.stringify(result.patient));
-            window.location.href = '/'; // Ensure index.html is correctly referenced
+            window.location.href = '/healthAI/'; // Ensure index.html is correctly referenced
         } else {
             // Handle errors (e.g., display an error message)
             alert(`Error: ${result.message}`);
