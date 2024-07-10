@@ -3,7 +3,7 @@ function openChatbot() {
     if (!sessionData) {
         sessioncreation();
     }
-    window.open("chatbot.html", "_blank", "width=800,height=600");
+    window.open("/healthAI/html/chatbot.html", "_blank", "width=800,height=600");
 }
 
 async function sessioncreation() {
@@ -164,7 +164,7 @@ async function createDoctorCards(searchQuery = '') {
     doctorData.slice(0, 4).forEach((doctor, index) => {
         const card = `
             <div class="card" style="width: 18rem;">
-                <img src="../images/doctor${index + 1}.jpeg" class="card-img-top" alt="...">
+                <img src="./images/doctor${index + 1}.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${doctor.Name}</h5>
                     <h5 class="card-text">${doctor.Speciality}</h5>
